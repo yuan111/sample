@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+	.container-fluid
+		.row-fluid
+			.col-md-2.sidebar
+				ul.list-group
+					each item in products
+						a.list-group-item(href='/ui/#{item._id}') #{item.name} 
+							span.price-badge $#{item.price}
+			.col-md-10.col-md-offset-2
+				h3 Sample UI Page
+				.panel
+					.panel-body	Choose a product to see details
+

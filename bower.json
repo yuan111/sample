@@ -1,0 +1,23 @@
+{
+  "name": "sampleproject",
+  "version": "0.0.1",
+  "description": "sample project from Yuan",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "Yuan Fang"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}

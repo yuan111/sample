@@ -1,0 +1,24 @@
+extends ../layout
+
+block content
+	.container-fluid
+		.row-fluid
+			.col-md-2.sidebar
+				ul.list-group
+					each item in products
+						a.list-group-item(href='/ui/#{item._id}') 
+							span.name-badge #{item.name} 
+							span.price-badge $#{item.price}
+
+			.col-md-10.col-md-offset-2
+				.panel.col-sm-8.col-md-offset-2
+					.panel-body
+						.thumbnail
+							img(src=selected_item.image)
+							.caption
+								h3 #{selected_item.name}
+								p #{selected_item.description}
+								p 
+									span.price-in-thumbnail $#{selected_item.price}
+									button.btn.btn-default.btn-buy Buy Now
+	script(src='/js/ui.js')

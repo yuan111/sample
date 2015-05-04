@@ -1,0 +1,43 @@
+extends ../layout
+
+block content
+	.container
+		.row
+			table.table.table-hover.table-bordered
+				thead
+					tr 
+						th ID
+						th Name
+						th Price
+						th Description
+						th Date Added
+						th Date Updated
+						th Image
+						th Actions
+
+				tbody
+					each item in products
+						tr(class="item-id-#{item._id}")
+							td.id #{item._id}
+							td.name #{item.name}
+							td.price #{item.price}
+							td.col-md-3.description #{item.description}
+							td #{moment(item.createAt).format('MM/DD/YYYY')}
+							td #{moment(item.updateAt).format('MM/DD/YYYY')}
+							td.col-md-1
+								input.image(type="hidden", value="#{item.image}")
+								.thumbnail
+									img(src="#{item.image}", alt = "#{item.name}")
+
+							td.col-md-1
+								button.btn.btn-default.upd(data-id="#{item._id}")
+									span.glyphicon.glyphicon-pencil(aria-hidden='true')
+								button.btn.btn-default.del(data-id="#{item._id}")
+									span.glyphicon.glyphicon-remove(aria-hidden='true')
+					tr
+
+			button#add-btn.btn.btn-default Add New Product
+		include ../modals/add
+		include ../modals/update
+
+	script(src="/js/admin.js")

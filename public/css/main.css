@@ -1,0 +1,132 @@
+html, body{
+  height: 100%;
+}
+body{
+	padding-top: 80px;
+  font-family: citrixsans-regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  background-color: #EEE;
+}
+.navbar{
+  margin-bottom: 0;
+}
+.navbar-inverse{
+  background-color: #485162;
+  border-color:#323945;
+}
+.navbar-inverse .container{
+  margin-left: 0;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #323945;
+}
+
+
+.container-fluid{
+  padding-left: 0;
+  margin-top: -29px;
+  height: 100%;
+
+}
+
+.modal-single-input {
+  /*margin: -300px 0 0 150px;*/
+  width: 500px;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  margin-top: -199px;
+  margin-left: -199px;
+}
+.modal-single-input form {
+  color: #808080;
+  text-shadow: -1px 1px 0 #fff;
+  -moz-text-shadow: -1px 1px 0 #fff;
+  -webkit-text-shadow: -1px 1px 0 #fff;
+  margin-bottom: 0;
+}
+.modal-single-input form button {
+  width: 80px;
+  top: 213px;
+  /*position: absolute;*/
+}
+.modal-single-input form #cancel {
+  /*right: 110px;*/
+}
+.modal-single-input form #submit {
+  /*right: 18px;*/
+}
+.modal-single-input .modal-body {
+  /*height: 140px;*/
+  /*overflow: hidden;*/
+  padding-bottom: 0;
+}
+.modal-single-input .modal-footer {
+  height: 20px;
+}
+.sidebar {
+  background-color: #485162;
+  padding: 0 0;
+  height:100%;
+  position: fixed;
+}
+
+.sidebar .list-group-item{
+  background-color: #485162;
+  border:none;
+  border-width: 0 0 1px;
+  border-color: #485162;
+  margin-bottom: 0;
+  color: #BBB;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 0;
+
+}
+.price-badge{
+  float: right;
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  line-height: 1;
+}
+.name-badge{
+  width: 15px;
+}
+.sidebar a.list-group-item.active, .sidebar a.list-group-item.active:hover, .sidebar a.list-group-item.active:focus {
+  color: white;
+  background-color: #6A778C;
+  border-color: #485162;
+  color: #FFE599;
+}
+
+.sidebar a.list-group-item:hover {
+  color: white;
+  background-color: #6A778C;
+  border-color: #485162;
+  /*color: #FFE599;*/
+}
+.sidebar .list-group{
+  margin-top: 20px;
+}
+
+.btn-buy{
+  float: right;
+}
+.panel{
+  font-family: monospace;
+  margin-top: 20px;
+}
+.price-in-thumbnail{
+  font-size: 15px;
+}
+.btn-default{
+  background-color: #DADDE0;
+}
+
+.panel-body .thumbnail img{
+  max-height: 350px;
+}

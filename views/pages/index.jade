@@ -1,0 +1,31 @@
+extends ../layout
+block content
+	.container-fluid
+		.row-fluid
+			.col-md-2.sidebar
+				ul.list-group
+					a.active.list-group-item Overview 
+			.col-md-10.col-md-offset-2
+				h3 Overview
+				.panel
+					.panel-body
+						h4 - Stack
+						p Node + Express.Js + Jade + Twitter Bootstrap + MongoDB(Mongoose) 
+						h4 - Features
+						p Admin page: get, add, update, delete products
+						p UI page: sort products by name, display details when click on one product
+						h4 - Main Project Structure
+						p -Project
+						p &nbsp;&nbsp;-node_modules
+						p &nbsp;&nbsp;-models
+						p &nbsp;&nbsp;-schemas
+						p &nbsp;&nbsp;-public
+						p &nbsp;&nbsp;&nbsp;&nbsp;-css/*.css
+						p &nbsp;&nbsp;&nbsp;&nbsp;-javasript/*.js
+						p &nbsp;&nbsp;&nbsp;&nbsp;-libs
+						p &nbsp;&nbsp;-views
+						p &nbsp;&nbsp;&nbsp;&nbsp;-includes/*.jade
+						p &nbsp;&nbsp;&nbsp;&nbsp;-modals/*.jade
+						p &nbsp;&nbsp;&nbsp;&nbsp;-pages/*.jade
+						p &nbsp;&nbsp;&nbsp;&nbsp;-layout.jade
+						p &nbsp;&nbsp;-server.js

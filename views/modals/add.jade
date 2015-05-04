@@ -1,0 +1,28 @@
+
+#add-modal.modal-content.modal-single-input.modal.fade
+	div.modal-header
+		button.close(data-dismiss='modal') x
+		h3 Add New Record
+	div.modal-body
+		//- form.form-horizontal
+		form.form-horizontal(method ="post",action ="/admin/products/new")
+			.form-group
+				.col-sm-5
+					label(for='inputName') Product Name
+					input#inputName.form-control(type='text', placeholder='Name', name="product[name]")
+				.col-sm-5
+					label(for='inputPrice') Price
+					input#inputPrice.form-control(type='text', placeholder='0', name="product[price]")
+			.form-group
+				label.col-sm-10(for='inputImage') Image
+				.col-sm-10
+					input#inputImage.form-control(type='text', placeholder='URL', name="product[image]")
+			.form-group
+				label.col-sm-10(for='inputDescription') Description
+				.col-sm-10
+					textarea#inputDescription.form-control(type='text', placeholder='description', name="product[description]")
+			button#sub-add-btn.btn.btn-default(type='submit') Submit
+			button(data-dismiss="modal")#cancel.btn.btn-default Cancel
+			div.alert.alert-error.hide
+			button(data-dismiss="alert").close
+	div.modal-footer
